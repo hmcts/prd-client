@@ -1,7 +1,7 @@
 {
-  "name": "organisationclient",
+  "name": "prd-client",
   "version": "0.0.1",
-  "description": "",
+  "description": "Client library to access Professional Reference Data",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -11,8 +11,6 @@
     "test": "jest",
     "lint": "tslint --project tsconfig.json --format verbose"
   },
-  "author": "James Nelson",
-  "license": "ISC",
   "devDependencies": {
     "@types/node-fetch": "^2.5.8",
     "jest": "^26.6.3",
@@ -36,5 +34,8 @@
       "js"
     ],
     "testEnvironment": "node"
-  }
+  },
+  "repository": "git@github.com:hmcts/prd-client.git",
+  "license": "MIT",
+  "private": false
 }
