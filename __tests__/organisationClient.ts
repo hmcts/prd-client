@@ -6,12 +6,11 @@ import { OrganisationClient } from '../src';
 const mockUrl = 'http://localhost/status',
       mockApiToken = '112211',
       mockServiceToken = '221122',
-      mockUserEmail = 'super=user',
       mockStatus = 'active',
       mockOrgName = 'mock org'
 
 const organisationClient = new OrganisationClient(
-  mockApiToken, mockServiceToken, mockUserEmail, mockUrl);
+  mockApiToken, mockServiceToken, mockUrl);
 
 describe('organisationClient', () => {
   describe('get all organisations', () => {
