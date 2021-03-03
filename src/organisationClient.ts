@@ -4,7 +4,6 @@ import { OrganisationMinimalInfo } from './types';
 export class OrganisationClient {
   constructor(private readonly apiKey: string,
               private readonly serviceApiKey: string,
-              private readonly userEmail: string,
               private readonly apiUrl: string = 'http://rd-professional-api-aat.service.core-compute-aat.internal/refdata/external/v1/organisations/status') {}
 
   public getOrganisations(status: string, address: boolean = true): Promise<OrganisationMinimalInfo[]> {
@@ -54,7 +53,6 @@ export class OrganisationClient {
       headers: {
         'Authorization': this.apiKey,
         'ServiceAuthorization': this.serviceApiKey,
-        'UserEmail': this.userEmail,
         'accept': 'application/json'
       }
     })
