@@ -43,12 +43,13 @@ export class OrganisationClient {
             .trim()
             .toLowerCase()
             .includes(name);
-        })
+        }).sort((organisationOne, organisationsTwo) =>
+            organisationOne.name.localeCompare(organisationsTwo.name))
       })
-      .catch(error => { throw error });        
+      .catch(error => { throw error });
   }
 
-  private getUri(path: string): Promise<any> {  
+  private getUri(path: string): Promise<any> {
     return fetch(`${this.apiUrl}${path}`, {
       headers: {
         'Authorization': this.apiKey,
