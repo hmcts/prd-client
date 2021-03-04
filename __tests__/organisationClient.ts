@@ -35,7 +35,7 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "Ernser Inc",
-              "organisationIdentifier": "21-3701590"
+              "organisationIdentifier": "21-1111111"
             },
             {
               "contactInformation": [
@@ -50,7 +50,7 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "Zboncak and Sons",
-              "organisationIdentifier": "25-3701590"
+              "organisationIdentifier": "22-2222222"
             },
             {
               "contactInformation": [
@@ -65,67 +65,67 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "Kassulke Inc",
-              "organisationIdentifier": "24-3701590"
+              "organisationIdentifier": "23-3333333"
             },
             {
               "contactInformation": [
                 {
-                  "addressLine1": "1 Trasna way",
-                  "addressLine2": "Lurgan",
+                  "addressLine1": "1 This is the way",
+                  "addressLine2": "London",
                   "addressLine3": "",
                   "country": "United Kingdom",
-                  "county": "Armagh",
-                  "postCode": "BT25 545",
-                  "townCity": "Craigavon"
+                  "county": "Westminster",
+                  "postCode": "XW16 5AA",
+                  "townCity": "London"
                 }
               ],
               "name": "B Org",
-              "organisationIdentifier": "21-3701590"
+              "organisationIdentifier": "24-4444444"
             },
             {
               "contactInformation": [
                 {
-                  "addressLine1": "10 Lakeview",
+                  "addressLine1": "12 Lakeview",
                   "addressLine2": "Crumlin",
                   "addressLine3": "",
                   "country": "United Kingdom",
                   "county": "Down",
-                  "postCode": "BT21 525",
+                  "postCode": "BT21 G25",
                   "townCity": "Ballymena"
                 }
               ],
               "name": "Z and Sons",
-              "organisationIdentifier": "25-3701590"
+              "organisationIdentifier": "25-5555555"
             },
             {
               "contactInformation": [
                 {
-                  "addressLine1": "24 Sandbank rd",
-                  "addressLine2": "Sandbank",
+                  "addressLine1": "24 Mountain rd",
+                  "addressLine2": "Hideban,",
                   "addressLine3": "",
                   "country": "United Kingdom",
                   "county": "Down",
-                  "postCode": "BT21 525",
-                  "townCity": "Galway"
+                  "postCode": "BT18 7DU",
+                  "townCity": "Belfast"
                 }
               ],
               "name": "X Org",
-              "organisationIdentifier": "24-3701590"
+              "organisationIdentifier": "26-6666666"
             },
             {
               "contactInformation": [
                 {
-                  "addressLine1": "24 Sandbank rd",
-                  "addressLine2": "Sandbank",
+                  "addressLine1": "64 Zoo lane",
+                  "addressLine2": "On the Hikk",
                   "addressLine3": "",
                   "country": "United Kingdom",
                   "county": "Down",
-                  "postCode": "BT21 525",
+                  "postCode": "BT21 6JE",
                   "townCity": "Galway"
                 }
               ],
               "name": "1 Org",
-              "organisationIdentifier": "24-3701590"
+              "organisationIdentifier": "27-7777777"
             },
             {
               "contactInformation": [
@@ -140,7 +140,7 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "2 Org",
-              "organisationIdentifier": "24-3701590"
+              "organisationIdentifier": "24-1238393"
             },
             {
               "contactInformation": [
@@ -155,7 +155,7 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "9 Org",
-              "organisationIdentifier": "24-3701590"
+              "organisationIdentifier": "24-1238333"
             },
             {
               "contactInformation": [
@@ -170,7 +170,7 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "0 Org",
-              "organisationIdentifier": "24-3701590"
+              "organisationIdentifier": "24-4827328"
             },
             {
               "contactInformation": [
@@ -185,7 +185,7 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "* Org",
-              "organisationIdentifier": "24-3701590"
+              "organisationIdentifier": "24-2847729"
             }
           ]);
         })
@@ -255,7 +255,7 @@ describe('organisationClient', () => {
               }
             ],
             "name": "Ernser Inc",
-            "organisationIdentifier": "21-3701590"
+            "organisationIdentifier": "21-1111111"
           },
           {
             "contactInformation": [
@@ -270,7 +270,7 @@ describe('organisationClient', () => {
               }
             ],
             "name": "Kassulke Inc",
-            "organisationIdentifier": "24-3701590"
+            "organisationIdentifier": "23-3333333"
           }
         ]);
       })
@@ -297,7 +297,7 @@ describe('organisationClient', () => {
                   }
                 ],
                 "name": "* Org",
-                "organisationIdentifier": "24-3701590"
+                "organisationIdentifier": "24-2847729"
               },
               {
                 "contactInformation": [
@@ -312,22 +312,22 @@ describe('organisationClient', () => {
                   }
                 ],
                 "name": "0 Org",
-                "organisationIdentifier": "24-3701590"
+                "organisationIdentifier": "24-4827328"
               },
               {
                 "contactInformation": [
                   {
-                    "addressLine1": "24 Sandbank rd",
-                    "addressLine2": "Sandbank",
+                    "addressLine1": "64 Zoo lane",
+                    "addressLine2": "On the Hikk",
                     "addressLine3": "",
                     "country": "United Kingdom",
                     "county": "Down",
-                    "postCode": "BT21 525",
+                    "postCode": "BT21 6JE",
                     "townCity": "Galway"
                   }
                 ],
                 "name": "1 Org",
-                "organisationIdentifier": "24-3701590"
+                "organisationIdentifier": "27-7777777"
               },
               {
                 "contactInformation": [
@@ -342,7 +342,7 @@ describe('organisationClient', () => {
                   }
                 ],
                 "name": "2 Org",
-                "organisationIdentifier": "24-3701590"
+                "organisationIdentifier": "24-1238393"
               },
               {
                 "contactInformation": [
@@ -357,37 +357,37 @@ describe('organisationClient', () => {
                   }
                 ],
                 "name": "9 Org",
-                "organisationIdentifier": "24-3701590"
+                "organisationIdentifier": "24-1238333"
               },
               {
                 "contactInformation": [
                   {
-                    "addressLine1": "1 Trasna way",
-                    "addressLine2": "Lurgan",
+                    "addressLine1": "1 This is the way",
+                    "addressLine2": "London",
                     "addressLine3": "",
                     "country": "United Kingdom",
-                    "county": "Armagh",
-                    "postCode": "BT25 545",
-                    "townCity": "Craigavon"
+                    "county": "Westminster",
+                    "postCode": "XW16 5AA",
+                    "townCity": "London"
                   }
                 ],
                 "name": "B Org",
-                "organisationIdentifier": "21-3701590"
+                "organisationIdentifier": "24-4444444"
               },
               {
                 "contactInformation": [
                   {
-                    "addressLine1": "24 Sandbank rd",
-                    "addressLine2": "Sandbank",
+                    "addressLine1": "24 Mountain rd",
+                    "addressLine2": "Hideban,",
                     "addressLine3": "",
                     "country": "United Kingdom",
                     "county": "Down",
-                    "postCode": "BT21 525",
-                    "townCity": "Galway"
+                    "postCode": "BT18 7DU",
+                    "townCity": "Belfast"
                   }
                 ],
                 "name": "X Org",
-                "organisationIdentifier": "24-3701590"
+                "organisationIdentifier": "26-6666666"
               }
             ]);
           })
