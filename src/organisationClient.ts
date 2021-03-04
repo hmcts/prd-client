@@ -36,6 +36,10 @@ export class OrganisationClient {
 
     name = name.trim().toLowerCase();
 
+    const alphabeticalOrder = () =>
+        (organisationOne: { name: string; }, organisationsTwo: { name: string; }) =>
+        organisationOne.name.localeCompare(organisationsTwo.name);
+
     return this.getOrganisations(status, address)
       .then(organisations => {
         return organisations.filter(organisation => {
@@ -43,8 +47,7 @@ export class OrganisationClient {
             .trim()
             .toLowerCase()
             .includes(name);
-        }).sort((organisationOne, organisationsTwo) =>
-            organisationOne.name.localeCompare(organisationsTwo.name))
+        }).sort(alphabeticalOrder())
       })
       .catch(error => { throw error });
   }
