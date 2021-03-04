@@ -66,6 +66,126 @@ describe('organisationClient', () => {
               ],
               "name": "Kassulke Inc",
               "organisationIdentifier": "24-3701590"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "1 Trasna way",
+                  "addressLine2": "Lurgan",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Armagh",
+                  "postCode": "BT25 545",
+                  "townCity": "Craigavon"
+                }
+              ],
+              "name": "B Org",
+              "organisationIdentifier": "21-3701590"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "10 Lakeview",
+                  "addressLine2": "Crumlin",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Ballymena"
+                }
+              ],
+              "name": "Z and Sons",
+              "organisationIdentifier": "25-3701590"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "X Org",
+              "organisationIdentifier": "24-3701590"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "1 Org",
+              "organisationIdentifier": "24-3701590"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "2 Org",
+              "organisationIdentifier": "24-3701590"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "9 Org",
+              "organisationIdentifier": "24-3701590"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "0 Org",
+              "organisationIdentifier": "24-3701590"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "* Org",
+              "organisationIdentifier": "24-3701590"
             }
           ]);
         })
@@ -156,14 +276,89 @@ describe('organisationClient', () => {
       })
     });
 
-    test('it should return a list of organisations in alphabetical order (Ascending)', () => {
+    test('it should return a list of organisations when matching organisations are found in Ascending alphabetical order', () => {
       nock(mockUrl)
           .get(`/${mockStatus}?address=true`)
           .reply(200, fs.readFileSync(path.join(__dirname, 'mockResponseBody.json')))
 
-      return organisationClient.getOrganisationByName(mockStatus, 'inc')
+      return organisationClient.getOrganisationByName(mockStatus, 'org')
           .then(response => {
             expect(response).toEqual([
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "* Org",
+                "organisationIdentifier": "24-3701590"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "0 Org",
+                "organisationIdentifier": "24-3701590"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "1 Org",
+                "organisationIdentifier": "24-3701590"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "2 Org",
+                "organisationIdentifier": "24-3701590"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "9 Org",
+                "organisationIdentifier": "24-3701590"
+              },
               {
                 "contactInformation": [
                   {
@@ -176,7 +371,7 @@ describe('organisationClient', () => {
                     "townCity": "Craigavon"
                   }
                 ],
-                "name": "Ernser Inc",
+                "name": "B Org",
                 "organisationIdentifier": "21-3701590"
               },
               {
@@ -191,7 +386,7 @@ describe('organisationClient', () => {
                     "townCity": "Galway"
                   }
                 ],
-                "name": "Kassulke Inc",
+                "name": "X Org",
                 "organisationIdentifier": "24-3701590"
               }
             ]);

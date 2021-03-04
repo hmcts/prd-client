@@ -43,5 +43,125 @@
     ],
     "name": "Kassulke Inc",
     "organisationIdentifier": "24-3701590"
+  },
+  {
+    "contactInformation": [
+      {
+        "addressLine1": "1 Trasna way",
+        "addressLine2": "Lurgan",
+        "addressLine3": "",
+        "country": "United Kingdom",
+        "county": "Armagh",
+        "postCode": "BT25 545",
+        "townCity": "Craigavon"
+      }
+    ],
+    "name": "B Org",
+    "organisationIdentifier": "21-3701590"
+  },
+  {
+    "contactInformation": [
+      {
+        "addressLine1": "10 Lakeview",
+        "addressLine2": "Crumlin",
+        "addressLine3": "",
+        "country": "United Kingdom",
+        "county": "Down",
+        "postCode": "BT21 525",
+        "townCity": "Ballymena"
+      }
+    ],
+    "name": "Z and Sons",
+    "organisationIdentifier": "25-3701590"
+  },
+  {
+    "contactInformation": [
+      {
+        "addressLine1": "24 Sandbank rd",
+        "addressLine2": "Sandbank",
+        "addressLine3": "",
+        "country": "United Kingdom",
+        "county": "Down",
+        "postCode": "BT21 525",
+        "townCity": "Galway"
+      }
+    ],
+    "name": "X Org",
+    "organisationIdentifier": "24-3701590"
+  },
+  {
+    "contactInformation": [
+      {
+        "addressLine1": "24 Sandbank rd",
+        "addressLine2": "Sandbank",
+        "addressLine3": "",
+        "country": "United Kingdom",
+        "county": "Down",
+        "postCode": "BT21 525",
+        "townCity": "Galway"
+      }
+    ],
+    "name": "1 Org",
+    "organisationIdentifier": "24-3701590"
+  },
+  {
+    "contactInformation": [
+      {
+        "addressLine1": "24 Sandbank rd",
+        "addressLine2": "Sandbank",
+        "addressLine3": "",
+        "country": "United Kingdom",
+        "county": "Down",
+        "postCode": "BT21 525",
+        "townCity": "Galway"
+      }
+    ],
+    "name": "2 Org",
+    "organisationIdentifier": "24-3701590"
+  },
+  {
+    "contactInformation": [
+      {
+        "addressLine1": "24 Sandbank rd",
+        "addressLine2": "Sandbank",
+        "addressLine3": "",
+        "country": "United Kingdom",
+        "county": "Down",
+        "postCode": "BT21 525",
+        "townCity": "Galway"
+      }
+    ],
+    "name": "9 Org",
+    "organisationIdentifier": "24-3701590"
+  },
+  {
+    "contactInformation": [
+      {
+        "addressLine1": "24 Sandbank rd",
+        "addressLine2": "Sandbank",
+        "addressLine3": "",
+        "country": "United Kingdom",
+        "county": "Down",
+        "postCode": "BT21 525",
+        "townCity": "Galway"
+      }
+    ],
+    "name": "0 Org",
+    "organisationIdentifier": "24-3701590"
+  },
+  {
+    "contactInformation": [
+      {
+        "addressLine1": "24 Sandbank rd",
+        "addressLine2": "Sandbank",
+        "addressLine3": "",
+        "country": "United Kingdom",
+        "county": "Down",
+        "postCode": "BT21 525",
+        "townCity": "Galway"
+      }
+    ],
+    "name": "* Org",
+    "organisationIdentifier": "24-3701590"
   }
 ]
