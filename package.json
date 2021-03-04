@@ -1,6 +1,5 @@
 {
   "name": "@hmcts/prd-client",
-  "version": "0.0.1",
   "description": "Client library to access Professional Reference Data",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
