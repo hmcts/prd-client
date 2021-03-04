@@ -35,7 +35,7 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "Ernser Inc",
-              "organisationIdentifier": "21-3701590"
+              "organisationIdentifier": "21-1111111"
             },
             {
               "contactInformation": [
@@ -50,7 +50,7 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "Zboncak and Sons",
-              "organisationIdentifier": "25-3701590"
+              "organisationIdentifier": "22-2222222"
             },
             {
               "contactInformation": [
@@ -65,7 +65,127 @@ describe('organisationClient', () => {
                 }
               ],
               "name": "Kassulke Inc",
-              "organisationIdentifier": "24-3701590"
+              "organisationIdentifier": "23-3333333"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "1 This is the way",
+                  "addressLine2": "London",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Westminster",
+                  "postCode": "XW16 5AA",
+                  "townCity": "London"
+                }
+              ],
+              "name": "B Org",
+              "organisationIdentifier": "24-4444444"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "12 Lakeview",
+                  "addressLine2": "Crumlin",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 G25",
+                  "townCity": "Ballymena"
+                }
+              ],
+              "name": "Z and Sons",
+              "organisationIdentifier": "25-5555555"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Mountain rd",
+                  "addressLine2": "Hideban,",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT18 7DU",
+                  "townCity": "Belfast"
+                }
+              ],
+              "name": "X Org",
+              "organisationIdentifier": "26-6666666"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "64 Zoo lane",
+                  "addressLine2": "On the Hikk",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 6JE",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "1 Org",
+              "organisationIdentifier": "27-7777777"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "2 Org",
+              "organisationIdentifier": "24-1238393"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "9 Org",
+              "organisationIdentifier": "24-1238333"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "0 Org",
+              "organisationIdentifier": "24-4827328"
+            },
+            {
+              "contactInformation": [
+                {
+                  "addressLine1": "24 Sandbank rd",
+                  "addressLine2": "Sandbank",
+                  "addressLine3": "",
+                  "country": "United Kingdom",
+                  "county": "Down",
+                  "postCode": "BT21 525",
+                  "townCity": "Galway"
+                }
+              ],
+              "name": "* Org",
+              "organisationIdentifier": "24-2847729"
             }
           ]);
         })
@@ -135,7 +255,7 @@ describe('organisationClient', () => {
               }
             ],
             "name": "Ernser Inc",
-            "organisationIdentifier": "21-3701590"
+            "organisationIdentifier": "21-1111111"
           },
           {
             "contactInformation": [
@@ -150,13 +270,130 @@ describe('organisationClient', () => {
               }
             ],
             "name": "Kassulke Inc",
-            "organisationIdentifier": "24-3701590"
+            "organisationIdentifier": "23-3333333"
           }
         ]);
       })
     });
 
-    test('it should return an empty list if no organisations include organiation name', () => {
+    test('it should return a list of organisations when matching organisations are found in Ascending alphabetical order', () => {
+      nock(mockUrl)
+          .get(`/${mockStatus}?address=true`)
+          .reply(200, fs.readFileSync(path.join(__dirname, 'mockResponseBody.json')))
+
+      return organisationClient.getOrganisationByName(mockStatus, 'org')
+          .then(response => {
+            expect(response).toEqual([
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "* Org",
+                "organisationIdentifier": "24-2847729"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "0 Org",
+                "organisationIdentifier": "24-4827328"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "64 Zoo lane",
+                    "addressLine2": "On the Hikk",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 6JE",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "1 Org",
+                "organisationIdentifier": "27-7777777"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "2 Org",
+                "organisationIdentifier": "24-1238393"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Sandbank rd",
+                    "addressLine2": "Sandbank",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT21 525",
+                    "townCity": "Galway"
+                  }
+                ],
+                "name": "9 Org",
+                "organisationIdentifier": "24-1238333"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "1 This is the way",
+                    "addressLine2": "London",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Westminster",
+                    "postCode": "XW16 5AA",
+                    "townCity": "London"
+                  }
+                ],
+                "name": "B Org",
+                "organisationIdentifier": "24-4444444"
+              },
+              {
+                "contactInformation": [
+                  {
+                    "addressLine1": "24 Mountain rd",
+                    "addressLine2": "Hideban,",
+                    "addressLine3": "",
+                    "country": "United Kingdom",
+                    "county": "Down",
+                    "postCode": "BT18 7DU",
+                    "townCity": "Belfast"
+                  }
+                ],
+                "name": "X Org",
+                "organisationIdentifier": "26-6666666"
+              }
+            ]);
+          })
+    });
+
+    test('it should return an empty list if no organisations include organisation name', () => {
       nock(mockUrl)
       .get(`/${mockStatus}?address=true`)
       .reply(200, fs.readFileSync(path.join(__dirname, 'mockResponseBody.json')))

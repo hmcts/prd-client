@@ -36,6 +36,10 @@ export class OrganisationClient {
 
     name = name.trim().toLowerCase();
 
+    const alphabeticalOrder = () =>
+        (organisationOne: { name: string; }, organisationsTwo: { name: string; }) =>
+        organisationOne.name.localeCompare(organisationsTwo.name);
+
     return this.getOrganisations(status, address)
       .then(organisations => {
         return organisations.filter(organisation => {
@@ -43,12 +47,12 @@ export class OrganisationClient {
             .trim()
             .toLowerCase()
             .includes(name);
-        })
+        }).sort(alphabeticalOrder())
       })
-      .catch(error => { throw error });        
+      .catch(error => { throw error });
   }
 
-  private getUri(path: string): Promise<any> {  
+  private getUri(path: string): Promise<any> {
     return fetch(`${this.apiUrl}${path}`, {
       headers: {
         'Authorization': this.apiKey,
