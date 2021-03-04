@@ -393,7 +393,7 @@ describe('organisationClient', () => {
           })
     });
 
-    test('it should return an empty list if no organisations include organiation name', () => {
+    test('it should return an empty list if no organisations include organisation name', () => {
       nock(mockUrl)
       .get(`/${mockStatus}?address=true`)
       .reply(200, fs.readFileSync(path.join(__dirname, 'mockResponseBody.json')))
