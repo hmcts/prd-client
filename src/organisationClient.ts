@@ -55,7 +55,7 @@ export class OrganisationClient {
   private getUri(path: string): Promise<any> {
     return fetch(`${this.apiUrl}${path}`, {
       headers: {
-        'Authorization': this.apiKey,
+        'Authorization': `Bearer ${this.apiKey}`,
         'ServiceAuthorization': this.serviceApiKey,
         'accept': 'application/json'
       }

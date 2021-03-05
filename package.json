@@ -1,6 +1,6 @@
 {
   "name": "@hmcts/prd-client",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Client library to access Professional Reference Data",
   "files": [
     "lib"
