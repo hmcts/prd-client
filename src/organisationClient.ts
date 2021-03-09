@@ -38,7 +38,7 @@ export class OrganisationClient {
 
     const alphabeticalOrder = () =>
         (organisationOne: { name: string; }, organisationsTwo: { name: string; }) =>
-        organisationOne.name.localeCompare(organisationsTwo.name);
+        organisationOne.name.trim().localeCompare(organisationsTwo.name.trim());
 
     return this.getOrganisations(status, address)
       .then(organisations => {

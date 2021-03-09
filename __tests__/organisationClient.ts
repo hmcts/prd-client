@@ -79,7 +79,7 @@ describe('organisationClient', () => {
                   "townCity": "London"
                 }
               ],
-              "name": "B Org",
+              "name": " B Org",
               "organisationIdentifier": "24-4444444"
             },
             {
@@ -371,7 +371,7 @@ describe('organisationClient', () => {
                     "townCity": "London"
                   }
                 ],
-                "name": "B Org",
+                "name": " B Org",
                 "organisationIdentifier": "24-4444444"
               },
               {
